@@ -13,7 +13,18 @@ function App() {
   }, []);
 
   async function handleAddRepository() {
-    // TODO
+    const response = await api.post('repositories', {
+      url: "http://github.com/Rocketseat/unform",
+      title: "Unform",
+      techs: [
+      "Node",
+      "Express",
+      "TypeScript"
+    ]
+    });
+
+    const repo = response.data;
+    setList([...list, repo]);
   }
 
   async function handleRemoveRepository(id) {
