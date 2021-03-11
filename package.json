@@ -9,7 +9,7 @@
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
     "serialize-javascript": "^4.0.0",
-    "elliptic": "^6.5.3",
+    "elliptic": "^6.5.4",
     "websocket-extensions": "ˆ0.1.4"
   },
   "scripts": {
